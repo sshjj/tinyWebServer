@@ -4,9 +4,6 @@ Config::Config(){
     //端口号,默认9006
     PORT = 9006;
 
-    //数据库校验方式，默认同步
-    SQLVerify = 0;
-
     //日志写入方式，默认同步
     LOGWrite = 0;
 
