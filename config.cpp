@@ -34,7 +34,7 @@ Config::Config(){
 
 void Config::parse_arg(int argc, char*argv[]){
     int opt;
-    const char *str = "p:v:l:m:o:s:t:c:a:";
+    const char *str = "p:l:m:o:s:t:c:a:";
     while ((opt = getopt(argc, argv, str)) != -1)
     {
         switch (opt)
@@ -42,11 +42,6 @@ void Config::parse_arg(int argc, char*argv[]){
         case 'p':
         {
             PORT = atoi(optarg);
-            break;
-        }
-        case 'v':
-        {
-            SQLVerify = atoi(optarg);
             break;
         }
         case 'l':
